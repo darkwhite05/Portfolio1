@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+    <!-- Custom CSS (optional) -->
+    <style>
+        .hero {
+            background-color: #f8f9fa;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .project-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .skills-bar {
+            background-color: #e9ecef;
+            border-radius: 25px;
+        }
+
+        .skills-bar .progress-bar {
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+ <!--    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+            <h1>Hello, I'm [Your Name]</h1>
+            <p>I'm a passionate web developer who creates modern, responsive websites and applications.</p>
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+        </div>
+    </section> -->
+
+<!-- Hero Section with Full-Width Background Image -->
+<section id="hero" class="hero d-flex align-items-center" 
+    style="background-image: url('images/background.jpg'); 
+           background-size: cover; 
+           background-position: center; 
+           height: 100vh;">
+    <div class="container text-center text-light">
+        <h1>Hello, I'm Mark Gerald Galindes</h1>
+        <p>I'm a dedicated web developer specializing in creating modern, responsive websites and applications.</p>
+        <br><br><a href="#projects" class="btn btn-primary">View My Projects</a>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="text-center">About Me</h2><br>
+                    <p class="fs-4">Hi! I'm Mark Gerald Galindes, a web developer skilled in crafting modern web solutions with the latest technologies. 
+                        I specialize in front-end development, creating visually appealing and user-friendly websites. With a strong eye for 
+                        design and a focus on detail, I aim to deliver high-quality work tailored to clients' needs.
+                </p>
+                </div>
+                <div class="col-lg-4 border p-4 text-dark shadow">
+                    <img src="images/profile.jpg" class="img-fluid rounded" alt="About Me Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">My Portfolio</h5>
+                            <p class="card-text">A brief description of my profile. It involves building a responsive landing page.</p>
+                            <a href="https://darkwhite05.github.io/Portfolio/" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">One Piece Fan Site</h5>
+                            <p class="card-text">A fan site dedicated to the One Piece series, featuring character bios and galleries.</p>
+                            <a href="https://darkwhite05.github.io/html_project2/" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">DevX Project</h5>
+                            <p class="card-text">A portfolio website showcasing personal projects and achievements.</p>
+                            <a href="https://darkwhite05.github.io/devX/#" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>HTML</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+
+                    <h4>CSS</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+
+                    <h4>JavaScript</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animatedbg-warning" role="progressbar" style="width: 85%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Bootstrap</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+
+                    <h4>PHP</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+
+                    <h4>MySQL</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 65%;" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Contact Section -->
+<section id="contact" class="my-6 bg-dark text-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <form class="border p-4 rounded bg-white text-dark shadow">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+    <!-- Navigation Section -->
+<section id="navigation" class="bg-white text-dark text-center py-3">
+    <h2 class="text-center mb-4">Quick Links</h2>
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Follow Me Section -->
+        <div class="col-md-3">
+          <h5>Follow me on:</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.linkedin.com/in/peyn05/" target="_blank" class="text-dark mx-2">
+                <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i> LinkedIn
+              </a></li>
+            <li><a href="https://github.com/darkwhite05" target="_blank" class="text-dark mx-2">
+                <i class="bi bi-github" style="font-size: 1.5rem;"></i> GitHub
+              </a></li>
+    
+          </ul>
+        </div>
+        
+        <!-- Column 2: Contact -->
+        <div class="col-md-3">
+          <h5>Contact</h5>
+          <ul class="list-unstyled">
+            <li><a href="mailto:geraldgalindes16@gmail.com" class="text-dark">
+                <i class="bi bi-google" style="font-size: 1.5rem;"></i> Gmail
+            </a></li>
+            <li><a href="https://www.facebook.com/peyn05/" target="_blank" class="text-dark">
+                <i class="bi bi-facebook" style="font-size: 1.5rem;"></i> Facebook
+            </a></li>
+            <li><a href="tel:+639610521201" class="text-dark">
+                <i class="bi bi-telephone" style="font-size: 1.5rem;"></i> +63 961 052 1201
+            </a></li>
+          </ul>
+
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div class="col-md-3">
+          <h5>Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://learncomputertoday.net/" target="_blank" class="text-dark">Learn Computer Today</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank" class="text-dark">W3Schools</a></li>
+            <li><a href="https://chat.openai.com/" target="_blank" class="text-dark">ChatGPT</a></li>
+            <li><a href="https://stackoverflow.com/" target="_blank" class="text-dark">Stack Overflow</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 Mark Gerald Galindes | All Rights Reserved
+        
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
